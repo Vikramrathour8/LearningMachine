@@ -11,7 +11,7 @@
 ## Assignment 3 ##
 	
 	1. Implementing 2-Layer Neural Network to predict cat with accuracy of 72%
-	2. Implementing 5-Layer Neural Network to predict cat with accuracy of 805
+	2. Implementing 5-Layer Neural Network to predict cat with accuracy of 80%
 
 ## Assignment 4 ##
 	
