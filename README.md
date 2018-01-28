@@ -14,7 +14,17 @@
 	2. Implementing 5-Layer Neural Network to predict cat with accuracy of 80%
 
 ## Assignment 4 ##
+ 	
+### Initialization of Parameters (W,b) ###
+
+	1. Zero initialization of parameters results in poor train accuracy of 50%
+	2. Random Initialization of parameters result in accuracy of 83%
+	3. He Initalization of parameters result in train accuracy of 99%
 	
+### L2 regularization and Drop out ###
+
+        1. These are techniques which helps to remove/mitigate overfitting of training data
+
 ### Initialization of Parameters (W,b) ###
 	1. Zero initialization of parameters results in poor train accuracy of 50%
 	2. Random Initialization of parameters result in accuracy of 83%
