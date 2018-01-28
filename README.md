@@ -21,9 +21,13 @@
 	2. Random Initialization of parameters result in accuracy of 83%
 	3. He Initalization of parameters result in train accuracy of 99%
 	
+### L2 regularization and Drop out ###
 
-       1. These are techniques which helps to remove/mitigate overfitting of training data
+        1. These are techniques which helps to remove/mitigate overfitting of training data
 
 ## SoftMax Regression for Number classification Using Tensorflow ##
 	
      Using 3 hidden layers along with L2 regularization and Adam Optimizer to predict number with accuracy of 80% and have training accuracy of 99.08%
+     
+     
+
