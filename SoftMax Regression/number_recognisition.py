@@ -23,6 +23,9 @@ X_test_flatten = X_test_orig.reshape(X_test_orig.shape[0], -1).T
 # Normalize image vectors
 X_train = X_train_flatten/255.
 X_test = X_test_flatten/255.
+print Y_train_orig.shape
+print Y_test_orig.shape
+print Y_train_orig
 # Convert training and test labels to one hot matrices
 Y_train = convert_to_one_hot(Y_train_orig, 6)
 Y_test = convert_to_one_hot(Y_test_orig, 6)
@@ -74,7 +77,7 @@ def compute_cost(Z3, Y,parameters):
     
     return cost
 def model(X_train, Y_train, X_test, Y_test, learning_rate = 0.0001,
-          num_epochs = 1500, minibatch_size = 32, print_cost = True):
+          num_epochs = 50, minibatch_size = 32, print_cost = True):
     ops.reset_default_graph()                         # to be able to rerun the model without overwriting tf variables
     tf.set_random_seed(1)                             # to keep consistent results
     seed = 3                                          # to keep consistent results
@@ -136,13 +139,12 @@ parameters = model(X_train, Y_train, X_test, Y_test)
 import scipy
 from PIL import Image
 from scipy import ndimage
-my_image = "thumbs_up.jpg"
-fname = "images/" + my_image
+my_image = "four.jpg"
+fname = "Data/" + my_image
 image = np.array(ndimage.imread(fname, flatten=False))
 my_image = scipy.misc.imresize(image, size=(64,64)).reshape((1, 64*64*3)).T
 my_image_prediction = predict(my_image, parameters)
-
 plt.imshow(image)
 print("Your algorithm predicts: y = " + str(np.squeeze(my_image_prediction)))
-
+plt.show()
 

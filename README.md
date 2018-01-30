@@ -33,3 +33,7 @@ Using 3 hidden layers along with L2 regularization and Adam Optimizer to predict
 ## MNIST using TensorFlow ##
  
 Designed for any number of hidden layers. It has train accuracy of 99.41 % and test accuracy of about 97.51 % provided number of hidden layers are 3 and hidden units are 500,300 respectively
+
+## CNN for Gesture Recognization ##
+
+2 Layer CNN to identify gestures with accuracy of 80%
